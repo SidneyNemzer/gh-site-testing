@@ -5,7 +5,7 @@ const classes = [
     heros: [
       {
         name: "General",
-        image: "",
+        image: "...",
         achievements: [
           {
             name: "Blackjack",
