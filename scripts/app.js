@@ -48,15 +48,16 @@ const $listWrapper = document.querySelector('#list-wrapper')
 
 for (let _class = 0; _class<classes.length; _class++) {
   const curClass = classes[_class]
+  let list
 
-  $listWrapper.innerHTML += `<div class="content-block-title">`+curClass.name+`</div>
-<div class="list-block media-list inset">
+  $listWrapper.innerHTML += `<div class="content-block-title">`+curClass.name+`</div>`
+  list += `<div class="list-block media-list inset">
   <ul>`
 
   for (let hero = 0; hero < curClass.heros.length; hero++) {
     const curHero = curClass.heros[hero]
 
-    $listWrapper.innerHTML += `<li>
+    list += `<li>
     <a href=`+"#"+` class="item-link item-content">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
@@ -69,8 +70,10 @@ for (let _class = 0; _class<classes.length; _class++) {
   </li>`
   }
 
-  $listWrapper.innerHTML += `</ul>
+  list += `</ul>
   </div>`
+
+  $listWrapper.innerHTML += list
 }
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
