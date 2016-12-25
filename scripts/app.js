@@ -11,6 +11,56 @@ const classes = [
             name: "Blackjack",
             image: "...",
             description: "Earn 21 postgame cards in quick or competative play"
+          },
+          {
+            name: "Centenary",
+            image: "...",
+            description: "Win 100 games in quick or competitive play"
+          },
+          {
+            name: "Decked Out",
+            image: "...",
+            description: "Collect 50 unlocks for a single hero"
+          },
+          {
+            name: "Decorated",
+            image: "...",
+            description: "Earn 50 postgame medals in quick or competitive play"
+          },
+          {
+            name: "The Friend Zone",
+            image: "...",
+            description: "Play a quick or competitive play game in a group with a friend"
+          },
+          {
+            name: "Level 10",
+            image: "...",
+            description: "Reach level 10"
+          },
+          {
+            name: "Level 25",
+            image: "...",
+            description: "Reach level 25"
+          },
+          {
+            name: "Level 50",
+            image: "...",
+            description: "Reach level 50"
+          },
+          {
+            name: "The Path is Closed",
+            image: "...",
+            description: "Destroy 3 of Symmetra's Teleporters in a single quick or competitive game"
+          },
+          {
+            name: "Survival Expert",
+            image: "...",
+            description: "Use Health Packs to heal 900 health in a single life in quick or competitive play"
+          },
+          {
+            name: "Undying",
+            image: "...",
+            description: "Get a 20 player kill streak in quick or competitive game"
           }
         ]
       }
