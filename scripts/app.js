@@ -288,7 +288,7 @@ for (let _class = 0; _class < classes.length; _class++) {
     const curHero = curClass.heros[hero]
 
     list += `<li>
-    <a href=`+"#my-page"+` class="item-link item-content">
+    <a href=`+"#content-1"+` class="item-link item-content">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
         <div class="item-title-row">
