@@ -48,7 +48,7 @@ const $listWrapper = document.querySelector('#list-wrapper')
 
 for (let _class = 0; _class<classes.length; _class++) {
   const curClass = classes[_class]
-  let list
+  let list = ""
 
   $listWrapper.innerHTML += `<div class="content-block-title">`+curClass.name+`</div>`
   list += `<div class="list-block media-list inset">
