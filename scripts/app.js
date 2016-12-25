@@ -276,7 +276,7 @@ var mainView = app.addView('.view-main', {
 
 const $listWrapper = document.querySelector('#list-wrapper')
 
-for (let _class = 0; _class<classes.length; _class++) {
+for (let _class = 0; _class < classes.length; _class++) {
   const curClass = classes[_class]
   let list = ""
 
@@ -288,7 +288,7 @@ for (let _class = 0; _class<classes.length; _class++) {
     const curHero = curClass.heros[hero]
 
     list += `<li>
-    <a href=`+"#"+` class="item-link item-content">
+    <a href=`+"#my-page"+` class="item-link item-content">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
         <div class="item-title-row">
@@ -307,3 +307,14 @@ for (let _class = 0; _class<classes.length; _class++) {
 }
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
+
+mainView.router.loadContent(`<div class="navbar">
+        <div class="navbar-inner">
+            <div class="center">My Page</div>
+        </div>
+    </div>
+    <div class="page" data-page="my-page">
+        <div class="page-content">
+            <p>Here comes page content</p>
+        </div>
+    </div>`)
