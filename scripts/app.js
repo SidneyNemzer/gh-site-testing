@@ -10,7 +10,7 @@ const classes = [
           {
             name: "Blackjack",
             image: "...",
-            description: "Earn 21 postgame cards in quick or competative play"
+            description: "Earn 21 postgame cards in quick or competitive play"
           },
           {
             name: "Centenary",
@@ -75,7 +75,97 @@ const classes = [
         achievements: [
           {
             name: "Their Own Worst Enemey",
-            description: "Kill 2 enemies with a single use of Gengi's Deflect in quick or competative play"
+            image: "...",
+            description: "Kill 2 enemies with a single use of Gengi's Deflect in quick or competitive play"
+          },
+          {
+            name: "Slice and Dice",
+            image: "...",
+            description: "Kill 4 enemies with a single use of Genji's Dragonblade in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "McCree",
+        image: "...",
+        achievements: [
+          {
+            name: "Whoa There!",
+            description: "Interrupt and enemy ultimate ability with McCree's Flashbang in quick or competitive play"
+          },
+          {
+            name: "It's High Noon",
+            description: "Get 4 killing blows with a single use of McCree's Deadeye in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Pharah",
+        image: "...",
+        achievements: [
+          {
+            name: "Clearing the Area",
+            description: "Knock an enemy to their death using Pharah's Concussive Blast in quick or competitive play"
+          },
+          {
+            name: "Death From Above",
+            description: "Kill 4 enemies in a row without touching the ground as Pharah in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Reaper",
+        image: "...",
+        achievements: [
+          {
+            name: "Waste Not, Want Not",
+            description: "Get 3 solo kills with a single clip of Reaper's shotguns in quick or competitive play"
+          },
+          {
+            name: "Die Die Die... Die",
+            description: "Kill 4 enemies with a single use of Reaper's Death Blossom in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Soldier: 76",
+        image: "...",
+        achievements: [
+          {
+            name: "Rocket Man",
+            description: "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in quick or competitive play"
+          },
+          {
+            name: "Target Rich Environent",
+            description: "Kill 4 enemies with a single use of Soldier: 76's Tactical Visor in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Sombra",
+        image: "...",
+        achievements: [
+          {
+            name: "Hack the Planet",
+            description: "Hack 15 enemies without dying as Sombra in quick or competitive play"
+          },
+          {
+            name: "Power Outage",
+            description: "Hack 6 enemies at once as Sombra in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Tracer",
+        image: "...",
+        achievements: [
+          {
+            name: "Total Recall",
+            description: "Recover 400 health using Tracer's Recall without dying in quick or competitive play"
+          },
+          {
+            name: "Special Delivery",
+            description: "Stick 4 of Tracer's Pulse Bombs onto enemies in a single quick or competitive play game"
           }
         ]
       }
