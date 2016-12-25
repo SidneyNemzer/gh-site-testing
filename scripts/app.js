@@ -9,7 +9,7 @@ const classes = [
         achievements: [
           {
             name: "Blackjack",
-            image: "",
+            image: "...",
             description: "Earn 21 postgame cards in quick or competative play"
           }
         ]
@@ -21,7 +21,7 @@ const classes = [
     heros: [
       {
         name: "Gengi",
-        image: "",
+        image: "...",
         achievements: [
           {
             name: "Their Own Worst Enemey",
