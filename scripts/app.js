@@ -170,6 +170,96 @@ const classes = [
         ]
       }
     ]
+  },
+  {
+    name: "Defense",
+    heros: [
+      {
+        name: "Bastion",
+        image: "...",
+        achievements: [
+          {
+            name: "Triple Threat",
+            description: "Kill 2 enemies in each of Bastion's Configurations without dying in quick or competitive play"
+          },
+          {
+            name: "Charge!",
+            description: "Kill 4 enemies with a single use of Bastion's Configuration: Tank in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Hanzo",
+        image: "...",
+        achievements: [
+          {
+            name: "Simple Geometry",
+            description: "Get 2 killing blows with a single use of Hanzo's Scatter Arrow in quick or competitive play"
+          },
+          {
+            name: "The Dragon is Sated",
+            description: "Kill 4 enemies with one of Hanzo's Dragonstrikes in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Junkrat",
+        image: "...",
+        achievements: [
+          {
+            name: "Mine Like a Steel Trap",
+            description: "Knock an enemy into your Steel Trap using Junkrat's Concussion Mine in quick or competitive play"
+          },
+          {
+            name: "Roadkill",
+            description: "Kill 4 enemies with a single use of Junkrat's RIP-Tire in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Mei",
+        image: "...",
+        achievements: [
+          {
+            name: "Ice Blocked",
+            description: "Block 1200 Damage with a single use of Mei's Ice Wall in quick or competitive play"
+          },
+          {
+            name: "Cold Snap",
+            description: "Freeze 4 enemies at once with Mei in quick or competitive play"
+          }
+
+        ]
+      },
+      {
+        name: "Torbjörn",
+        image: "...",
+        achievements: [
+          {
+            name: "Armor Up!",
+            description: "Have one of Torbjörn's Armor Packs on 5 allies at the same time in quick or competitive play"
+          },
+          {
+            name: "Raid Wipe",
+            description: "Kill 4 enemies during a single use of Torbjörn's Molten Core in quick or competitive play"
+          }
+        ]
+      },
+      {
+        name: "Widowmaker",
+        "image":"...",
+        "achievements": [
+          {
+            "name": "Did That Sting?",
+            "description":"Kill 4 enemies using Widowmaker's Venom Mine during a single quick or competitive play game"
+          },
+          {
+            "name":"Smooth As Silk",
+            "description":"Kill an enemy with a Scoped Headshot while airborne as Widowmaker in quick or competitive play"
+          }
+        ]
+      }
+    ]
   }
 ]
 
