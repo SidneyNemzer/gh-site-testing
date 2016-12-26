@@ -271,14 +271,8 @@ var $$ = Dom7;
 
 // Add view
 var mainView = app.addView('.view-main', {
-  dynamicNavbar: true,
-  domCache: true //enable inline pages
+  dynamicNavbar: true
 });
-
-app.onPageBeforeAnimation("hero", function(page) {
-  console.log("About to animate!")
-  console.log(page)
-})
 
 const $listWrapper = document.querySelector('#list-wrapper')
 
@@ -294,7 +288,7 @@ for (let _class = 0; _class < classes.length; _class++) {
     const curHero = curClass.heros[hero]
 
     list += `<li>
-    <a href=`+"hero.html"+` class="item-link item-content">
+    <a href=`+"#"+` class="item-link item-content" onclick="openHeroPage(`+JSON.stringify(curHero)+`)">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
         <div class="item-title-row">
@@ -313,3 +307,9 @@ for (let _class = 0; _class < classes.length; _class++) {
 }
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
+$template = document.querySelector('template[name=hero]')
+
+function openHeroPage(hero) {
+  $template.querySelector('.navbar .center.sliding').innerText = hero.name
+  mainView.router.loadContent($template)
+}
