@@ -308,20 +308,3 @@ for (let _class = 0; _class < classes.length; _class++) {
 }
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
-
-mainView.router.loadContent(`<div class="navbar">
-        <div class="navbar-inner">
-            <div class="left">
-              <a href="#" class="back link">
-                <i class="icon icon-back"></i>
-                <span>Back</span>
-              </a>
-            </div>
-            <div class="center">My Page</div>
-        </div>
-    </div>
-    <div class="page" data-page="my-page">
-        <div class="page-content">
-            <p>Here comes page content</p>
-        </div>
-    </div>`)
