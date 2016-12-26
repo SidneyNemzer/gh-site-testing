@@ -271,7 +271,8 @@ var $$ = Dom7;
 
 // Add view
 var mainView = app.addView('.view-main', {
-  dynamicNavbar: true
+  dynamicNavbar: true,
+  domCache: true //enable inline pages
 });
 
 const $listWrapper = document.querySelector('#list-wrapper')
@@ -288,7 +289,7 @@ for (let _class = 0; _class < classes.length; _class++) {
     const curHero = curClass.heros[hero]
 
     list += `<li>
-    <a href=`+"#content-1"+` class="item-link item-content">
+    <a href=`+"#hero"+` class="item-link item-content">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
         <div class="item-title-row">
