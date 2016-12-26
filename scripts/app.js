@@ -275,6 +275,11 @@ var mainView = app.addView('.view-main', {
   domCache: true //enable inline pages
 });
 
+app.onPageBeforeAnimation("hero", function(page) {
+  console.log("About to animate!")
+  console.log(page)
+})
+
 const $listWrapper = document.querySelector('#list-wrapper')
 
 for (let _class = 0; _class < classes.length; _class++) {
