@@ -322,5 +322,5 @@ const $heroTemplate = document.querySelector('template#hero').content
 
 function openHeroPage(name) {
   $heroTemplate.querySelector('.navbar .center.sliding').innerText = name
-  mainView.router.loadContent($heroTemplate)
+  mainView.router.loadContent($heroTemplate.cloneNode(true))
 }
