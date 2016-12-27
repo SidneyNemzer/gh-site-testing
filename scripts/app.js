@@ -91,10 +91,12 @@ const classes = [
         achievements: [
           {
             name: "Whoa There!",
+            image: "unknown.png",
             description: "Interrupt and enemy ultimate ability with McCree's Flashbang in quick or competitive play"
           },
           {
             name: "It's High Noon",
+            image: "unknown.png",
             description: "Get 4 killing blows with a single use of McCree's Deadeye in quick or competitive play"
           }
         ]
@@ -105,10 +107,12 @@ const classes = [
         achievements: [
           {
             name: "Clearing the Area",
+            image: "unknown.png",
             description: "Knock an enemy to their death using Pharah's Concussive Blast in quick or competitive play"
           },
           {
             name: "Death From Above",
+            image: "unknown.png",
             description: "Kill 4 enemies in a row without touching the ground as Pharah in quick or competitive play"
           }
         ]
@@ -119,10 +123,12 @@ const classes = [
         achievements: [
           {
             name: "Waste Not, Want Not",
+            image: "unknown.png",
             description: "Get 3 solo kills with a single clip of Reaper's shotguns in quick or competitive play"
           },
           {
             name: "Die Die Die... Die",
+            image: "unknown.png",
             description: "Kill 4 enemies with a single use of Reaper's Death Blossom in quick or competitive play"
           }
         ]
@@ -133,10 +139,12 @@ const classes = [
         achievements: [
           {
             name: "Rocket Man",
+            image: "unknown.png",
             description: "Get 2 killing blows with a single use of Soldier: 76's Helix Rockets in quick or competitive play"
           },
           {
             name: "Target Rich Environent",
+            image: "unknown.png",
             description: "Kill 4 enemies with a single use of Soldier: 76's Tactical Visor in quick or competitive play"
           }
         ]
@@ -147,10 +155,12 @@ const classes = [
         achievements: [
           {
             name: "Hack the Planet",
+            image: "unknown.png",
             description: "Hack 15 enemies without dying as Sombra in quick or competitive play"
           },
           {
             name: "Power Outage",
+            image: "unknown.png",
             description: "Hack 6 enemies at once as Sombra in quick or competitive play"
           }
         ]
@@ -161,10 +171,12 @@ const classes = [
         achievements: [
           {
             name: "Total Recall",
+            image: "unknown.png",
             description: "Recover 400 health using Tracer's Recall without dying in quick or competitive play"
           },
           {
             name: "Special Delivery",
+            image: "unknown.png",
             description: "Stick 4 of Tracer's Pulse Bombs onto enemies in a single quick or competitive play game"
           }
         ]
@@ -180,10 +192,12 @@ const classes = [
         achievements: [
           {
             name: "Triple Threat",
+            image: "unknown.png",
             description: "Kill 2 enemies in each of Bastion's Configurations without dying in quick or competitive play"
           },
           {
             name: "Charge!",
+            image: "unknown.png",
             description: "Kill 4 enemies with a single use of Bastion's Configuration: Tank in quick or competitive play"
           }
         ]
@@ -194,10 +208,12 @@ const classes = [
         achievements: [
           {
             name: "Simple Geometry",
+            image: "unknown.png",
             description: "Get 2 killing blows with a single use of Hanzo's Scatter Arrow in quick or competitive play"
           },
           {
             name: "The Dragon is Sated",
+            image: "unknown.png",
             description: "Kill 4 enemies with one of Hanzo's Dragonstrikes in quick or competitive play"
           }
         ]
@@ -208,10 +224,12 @@ const classes = [
         achievements: [
           {
             name: "Mine Like a Steel Trap",
+            image: "unknown.png",
             description: "Knock an enemy into your Steel Trap using Junkrat's Concussion Mine in quick or competitive play"
           },
           {
             name: "Roadkill",
+            image: "unknown.png",
             description: "Kill 4 enemies with a single use of Junkrat's RIP-Tire in quick or competitive play"
           }
         ]
@@ -222,10 +240,12 @@ const classes = [
         achievements: [
           {
             name: "Ice Blocked",
+            image: "unknown.png",
             description: "Block 1200 Damage with a single use of Mei's Ice Wall in quick or competitive play"
           },
           {
             name: "Cold Snap",
+            image: "unknown.png",
             description: "Freeze 4 enemies at once with Mei in quick or competitive play"
           }
 
@@ -237,10 +257,12 @@ const classes = [
         achievements: [
           {
             name: "Armor Up!",
+            image: "unknown.png",
             description: "Have one of Torbjörn's Armor Packs on 5 allies at the same time in quick or competitive play"
           },
           {
             name: "Raid Wipe",
+            image: "unknown.png",
             description: "Kill 4 enemies during a single use of Torbjörn's Molten Core in quick or competitive play"
           }
         ]
@@ -251,10 +273,12 @@ const classes = [
         "achievements": [
           {
             "name": "Did That Sting?",
+            image: "unknown.png",
             "description":"Kill 4 enemies using Widowmaker's Venom Mine during a single quick or competitive play game"
           },
           {
             "name":"Smooth As Silk",
+            image: "unknown.png",
             "description":"Kill an enemy with a Scoped Headshot while airborne as Widowmaker in quick or competitive play"
           }
         ]
@@ -323,7 +347,8 @@ const $heroTemplate = document.querySelector('template#hero').content
 function openHeroPage(name) {
   // Initialize page
   const $heroPage = $heroTemplate.cloneNode(true)
-  const $pageContent = $heroPage.querySelector('.page-content .content-block')
+  const $loadingMessage = $heroPage.querySelector('#loading')
+  const $pageContent = $heroPage.querySelector('.page-content')
   const hero = heros[name]
   $heroPage.querySelector('.navbar .center.sliding').innerText = name
   mainView.router.loadContent($heroPage)
