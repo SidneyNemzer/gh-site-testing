@@ -265,6 +265,18 @@ const classes = [
 
 const heros = {};
 
+// Convert classes list to heros list
+classes.forEach(function(curClass) {
+  curclass.heros.forEach(function(curHero) {
+    heros[curHero.name] = {
+      image: curHero.image,
+      achievements: curHero.achievements,
+      "class": curClass.name
+    }
+  })
+})
+console.log(heros)
+
 // Initialize app
 var app = new Framework7();
 
