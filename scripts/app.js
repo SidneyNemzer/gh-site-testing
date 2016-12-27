@@ -321,6 +321,34 @@ document.querySelector('#loading').style.display = 'none'
 const $heroTemplate = document.querySelector('template#hero').content
 
 function openHeroPage(name) {
-  $heroTemplate.querySelector('.navbar .center.sliding').innerText = name
-  mainView.router.loadContent($heroTemplate.cloneNode(true))
+  // Initialize page
+  const $heroPage = $heroTemplate.cloneNode(true)
+  const $pageContent = $heroPage.querySelector('.page-content .content-block')
+  const hero = heros[name]
+  $heroPage.querySelector('.navbar .center.sliding').innerText = name
+  mainView.router.loadContent($heroPage)
+
+  // Populate Achievements
+  let list = ''
+  list += `<div class="list-block media-list">
+  <ul>`
+
+  hero.achievements.forEach(function(achievement) {
+    list += `<li>
+      <a href="#" class="item-link item-content">
+        <div class="item-media"><img src="`+achievement.image+`" width="44"></div>
+        <div class="item-inner">
+          <div class="item-title-row">
+            <div class="item-title">`+achievement.name+`</div>
+          </div>
+          <div class="item-text">`+achievement.description+`</div>
+        </div>
+      </a>
+    </li>`
+  })
+
+  list += `</ul>
+  </div>`
+
+  $pageContent.querySelector('#loading').style.display = 'none'
 }
