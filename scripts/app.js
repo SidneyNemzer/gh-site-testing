@@ -350,5 +350,6 @@ function openHeroPage(name) {
   list += `</ul>
   </div>`
 
+  $pageContent.innerHTML += list
   $pageContent.querySelector('#loading').style.display = 'none'
 }
