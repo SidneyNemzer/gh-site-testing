@@ -263,6 +263,8 @@ const classes = [
   }
 ]
 
+const heros = {};
+
 // Initialize app
 var app = new Framework7();
 
@@ -276,16 +278,14 @@ var mainView = app.addView('.view-main', {
 
 const $listWrapper = document.querySelector('#list-wrapper')
 
-for (let _class = 0; _class < classes.length; _class++) {
-  const curClass = classes[_class]
+classes.forEach( function(curClass) {
   let list = ""
 
   $listWrapper.innerHTML += `<div class="content-block-title">`+curClass.name+`</div>`
   list += `<div class="list-block media-list inset">
   <ul>`
 
-  for (let hero = 0; hero < curClass.heros.length; hero++) {
-    const curHero = curClass.heros[hero]
+  curClass.heros.forEach( function(curHero) {
 
     list += `<li>
     <a href=`+"#"+` class="item-link item-content" onclick="openHeroPage(`+JSON.stringify(curHero)+`)">
@@ -298,13 +298,13 @@ for (let _class = 0; _class < classes.length; _class++) {
       </div>
     </a>
   </li>`
-  }
+  })
 
   list += `</ul>
   </div>`
 
   $listWrapper.innerHTML += list
-}
+})
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
 $template = document.querySelector('template[name=hero]')
