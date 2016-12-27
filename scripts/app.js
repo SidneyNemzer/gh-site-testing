@@ -321,8 +321,8 @@ $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
 const $template = document.querySelector('template[name=hero]')
 
-function openHeroPage(attributes...) {
-  console.log(attributes...)
+function openHeroPage(attribute) {
+  console.log(attribute)
   $template.querySelector('.navbar .center.sliding').innerText = name
   mainView.router.loadContent($template)
 }
