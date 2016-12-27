@@ -319,9 +319,9 @@ classes.forEach( function(curClass) {
 })
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
-const $template = document.querySelector('template[data-name=hero]')
+const $heroTemplate = document.querySelector('template#hero').content
 
 function openHeroPage(name) {
-  $template.querySelector('.navbar .center.sliding').innerText = name
+  $heroTemplate.querySelector('.navbar .center.sliding').innerText = name
   mainView.router.loadContent($template)
 }
