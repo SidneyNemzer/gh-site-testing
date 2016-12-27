@@ -300,7 +300,7 @@ classes.forEach( function(curClass) {
   curClass.heros.forEach( function(curHero) {
 
     list += `<li>
-    <a href=`+"#"+` class="item-link item-content" onclick="openHeroPage(`+JSON.stringify(curHero)+`)">
+    <a href=`+"#"+` class="item-link item-content" onclick="openHeroPage(`+curHero.name+`)">
       <div class="item-media"><img src="`+curHero.image+`" width="44"></div>
       <div class="item-inner">
         <div class="item-title-row">
@@ -319,9 +319,9 @@ classes.forEach( function(curClass) {
 })
 $listWrapper.style.display = ''
 document.querySelector('#loading').style.display = 'none'
-$template = document.querySelector('template[name=hero]')
+const $template = document.querySelector('template[name=hero]')
 
-function openHeroPage(hero) {
-  $template.querySelector('.navbar .center.sliding').innerText = hero.name
+function openHeroPage(name) {
+  $template.querySelector('.navbar .center.sliding').innerText = name
   mainView.router.loadContent($template)
 }
