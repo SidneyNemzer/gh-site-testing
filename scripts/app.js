@@ -267,7 +267,7 @@ const heros = {};
 
 // Convert classes list to heros list
 classes.forEach(function(curClass) {
-  curclass.heros.forEach(function(curHero) {
+  curClass.heros.forEach(function(curHero) {
     heros[curHero.name] = {
       image: curHero.image,
       achievements: curHero.achievements,
