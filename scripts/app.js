@@ -5,61 +5,61 @@ const classes = [
     heros: [
       {
         name: "General",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Blackjack",
-            image: "...",
+            image: "unknown.png",
             description: "Earn 21 postgame cards in quick or competitive play"
           },
           {
             name: "Centenary",
-            image: "...",
+            image: "unknown.png",
             description: "Win 100 games in quick or competitive play"
           },
           {
             name: "Decked Out",
-            image: "...",
+            image: "unknown.png",
             description: "Collect 50 unlocks for a single hero"
           },
           {
             name: "Decorated",
-            image: "...",
+            image: "unknown.png",
             description: "Earn 50 postgame medals in quick or competitive play"
           },
           {
             name: "The Friend Zone",
-            image: "...",
+            image: "unknown.png",
             description: "Play a quick or competitive play game in a group with a friend"
           },
           {
             name: "Level 10",
-            image: "...",
+            image: "unknown.png",
             description: "Reach level 10"
           },
           {
             name: "Level 25",
-            image: "...",
+            image: "unknown.png",
             description: "Reach level 25"
           },
           {
             name: "Level 50",
-            image: "...",
+            image: "unknown.png",
             description: "Reach level 50"
           },
           {
             name: "The Path is Closed",
-            image: "...",
+            image: "unknown.png",
             description: "Destroy 3 of Symmetra's Teleporters in a single quick or competitive game"
           },
           {
             name: "Survival Expert",
-            image: "...",
+            image: "unknown.png",
             description: "Use Health Packs to heal 900 health in a single life in quick or competitive play"
           },
           {
             name: "Undying",
-            image: "...",
+            image: "unknown.png",
             description: "Get a 20 player kill streak in quick or competitive game"
           }
         ]
@@ -71,23 +71,23 @@ const classes = [
     heros: [
       {
         name: "Gengi",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Their Own Worst Enemey",
-            image: "...",
+            image: "unknown.png",
             description: "Kill 2 enemies with a single use of Gengi's Deflect in quick or competitive play"
           },
           {
             name: "Slice and Dice",
-            image: "...",
+            image: "unknown.png",
             description: "Kill 4 enemies with a single use of Genji's Dragonblade in quick or competitive play"
           }
         ]
       },
       {
         name: "McCree",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Whoa There!",
@@ -101,7 +101,7 @@ const classes = [
       },
       {
         name: "Pharah",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Clearing the Area",
@@ -115,7 +115,7 @@ const classes = [
       },
       {
         name: "Reaper",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Waste Not, Want Not",
@@ -129,7 +129,7 @@ const classes = [
       },
       {
         name: "Soldier: 76",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Rocket Man",
@@ -143,7 +143,7 @@ const classes = [
       },
       {
         name: "Sombra",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Hack the Planet",
@@ -157,7 +157,7 @@ const classes = [
       },
       {
         name: "Tracer",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Total Recall",
@@ -176,7 +176,7 @@ const classes = [
     heros: [
       {
         name: "Bastion",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Triple Threat",
@@ -190,7 +190,7 @@ const classes = [
       },
       {
         name: "Hanzo",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Simple Geometry",
@@ -204,7 +204,7 @@ const classes = [
       },
       {
         name: "Junkrat",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Mine Like a Steel Trap",
@@ -218,7 +218,7 @@ const classes = [
       },
       {
         name: "Mei",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Ice Blocked",
@@ -233,7 +233,7 @@ const classes = [
       },
       {
         name: "Torbjörn",
-        image: "...",
+        image: "unknown.png",
         achievements: [
           {
             name: "Armor Up!",
@@ -247,7 +247,7 @@ const classes = [
       },
       {
         name: "Widowmaker",
-        "image":"...",
+        "image":"unknown.png",
         "achievements": [
           {
             "name": "Did That Sting?",
@@ -275,7 +275,6 @@ classes.forEach(function(curClass) {
     }
   })
 })
-console.log(heros)
 
 // Initialize app
 var app = new Framework7();
