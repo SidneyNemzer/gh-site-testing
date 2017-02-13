@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>OAT</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.5.2/css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.5.2/css/framework7.ios.colors.min.css">
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="styles/app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+      <div class="view view-main">
 
+        <!-- Navbar -->
+        <div class="navbar">
+          <!-- Home page navbar -->
+          <div class="navbar-inner" data-page="index">
+            <div class="center">Overwatch Achievements Tracker</div>
+          </div>
+        </div>
+
+        <!-- Pages container -->
+        <div class="pages navbar-through toolbar-through">
+
+          <!-- Main Page -->
+          <div data-page="index" class="page">
+            <div class="page-content">
+
+              <p id="loading">Loading... <span class="preloader ks-preloader-big"></span></p>
+
+              <div id="list-wrapper" style="display: none">
+                <!-- List is generated here -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Toolbar-->
+        <!--
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="https://www.google.com" class="link">Google</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+        -->
+
+      </div>
+    </div>
+
+    <!-- Template for hero page -->
+    <template id="hero" style="display: none;">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="back link">
+              <i class="icon icon-back"></i>
+              <span>Back</span>
+             </a>
+          </div>
+          <div class="center sliding">Hero</div>
+        </div>
+      </div>
+
+      <!-- Page -->
+      <div class="pages">
+        <div data-page="hero" class="page">
+          <div class="page-content">
+            <div class="content-block">
+              <p id="loading">Loading... <span class="preloader ks-preloader-big"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.5.2/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
